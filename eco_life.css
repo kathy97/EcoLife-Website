@@ -38,7 +38,16 @@ body{
 
 .Content{
 	padding-left: 200px;
-padding-right: 200px;
+	padding-right: 200px;
+}
+.androidContent{
+	text-align:center;
+}
+
+
+button{
+	background-color: #78C259;
+	border-color: white;
 }
 
 #Gallery{
@@ -73,10 +82,10 @@ padding-right: 200px;
 
 @keyframes slide {
 	0% {
-		top: 0
+		top: 0%
 	}
 	12% {
-		top: 0
+		top: 0%
 	}
 	16% {
 		top: -100%
@@ -119,6 +128,7 @@ padding-right: 200px;
 }
 
 
+
 /*FORMATIERUNG - LISTED | UNLISTED*/
 li {
 	float: left;
@@ -155,6 +165,10 @@ h1 {
 	}
 
 h2{
+	text-align: center;
+}
+
+h3{
 	text-align: center;
 }
 
