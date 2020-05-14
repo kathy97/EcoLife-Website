@@ -8,6 +8,7 @@ body{
 	 font-size: 18px;
 	 width: 548px;
 	 }
+
  article {
 		 display : none;
 		 }
@@ -15,55 +16,61 @@ body{
  article:target {
 				display: block;
 				}
+
 		
-/*Formatierung des Dropdown Menüs*/	
-.NavBar
-	{
-	
-	}
-	
+/*Formatierung der Menu-Bar*/	
 .menuBar{
 	background-color: #a0f0ac;
 }
 
 .menuBar:hover {
-	background-color: #cbd0cb; 
+	background-color: #76d384; 
 	
 }
 
+
+/*CLASSES*/
+.atBottom {
+	position: relative;
+	bottom: 0px;
+	width: 100%;
+}
+
+.Content{
+	padding-left: 200px;
+padding-right: 200px;
+}
+
+.Gallery{
+	text-align: center;
+}
+
+/*IDs*/
 #Copyright {
 	text-align: center;
 }
 
 
-.atBottom {
-	position: absolute;
-	bottom: 0px;
-	width: 100%;
-}
-
-	
-li 
-	{
+/*FORMATIERUNG - LISTED | UNLISTED*/
+li {
 	float: left;
 	border-right: 1px solid #bbb;
 	display: block;
 	}
    
-li:last-child 
-	{
+li:last-child {
 	border-right: none;
 	background-color: none;
 	}
 	
-li a
-	{
+li a {
 	display: block;
 	color: black;
 	text-align: center;
 	padding: 8px 16px;
 	text-decoration: none;
 	}
+
 ul { 
 	list-style-type: none;
 	margin: 0;
@@ -71,8 +78,19 @@ ul {
 	overflow: hidden;
 	display: block;
    }
-	
+
+
+/*FORMATIERUNG - TEXT | ÜBERSCHRIFTEN*/
 h1 {
 	text-align: center;
 	font-size: 30px;
 	}
+
+h2{
+	text-align: center;
+}
+
+p {
+	text-align: center;
+	
+}
