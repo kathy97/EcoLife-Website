@@ -1,6 +1,7 @@
 /*Formatierung des Bodys/Körpers*/
-body{
+html, body{
 	background-color:#ddfcde;
+	height: 100%;
 	}
 
  nav {
@@ -30,10 +31,22 @@ body{
 
 
 /*CLASSES*/
-.atBottom {
-	position: relative;
+#atBottom {
+	position: absolute;
 	bottom: 0px;
 	width: 100%;
+	height: 1em;
+	text-align:center;
+}
+#Seite {
+    position: relative;
+    min-height: 100%;
+    width: 100%;
+
+
+}
+#Inhalt {
+    padding-bottom: 3em;
 }
 
 .Content{
@@ -57,7 +70,23 @@ button{
 	margin: 0 auto;
 	overflow: hidden;
 }
-
+#gallerie{
+	text-align: center;
+	width: 248px;
+	height: 496px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#container{
+	background-color: white;
+	height: 520px;
+  padding-top: 19px;
+	width: 290px;
+}
+#wrapper{
+	margin: 0;
+	padding:0;
+}
 #Gallery figure {
 	height:100%;
 	animation-name: slide;
@@ -68,8 +97,21 @@ button{
 	margin: 0;
 	padding: 0;
 }
-
+#gallerie figure {
+	height:100%;
+	animation-name: slide;
+	animation-duration: 18s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
 #Gallery img {
+	margin: 0;
+	padding: 0;
+}
+#gallerie img {
 	margin: 0;
 	padding: 0;
 }
@@ -77,6 +119,9 @@ button{
 
 
 #Gallery:hover figure {
+	animation-play-state: paused;
+}
+#gallerie:hover figure {
 	animation-play-state: paused;
 }
 
