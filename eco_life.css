@@ -41,8 +41,76 @@ body{
 padding-right: 200px;
 }
 
-.Gallery{
+#Gallery{
 	text-align: center;
+	width: 248px;
+	height: 379px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#Gallery figure {
+	height:100%;
+	animation-name: slide;
+	animation-duration: 18s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+#Gallery img {
+	margin: 0;
+	padding: 0;
+}
+/*Animation */
+
+
+#Gallery:hover figure {
+	animation-play-state: paused;
+}
+
+@keyframes slide {
+	0% {
+		top: 0
+	}
+	12% {
+		top: 0
+	}
+	16% {
+		top: -100%
+	}
+	28% {
+		top: -100%
+	}
+	32% {
+		top: -200%
+	}
+	44% {
+		top: -200%
+	}
+	48% {
+		top: -300%
+	}
+	60% {
+		top: -300%
+	}
+	65% {
+		top: -400%
+	}
+	78% {
+		top: -400%
+	}
+	83% {
+		top: -500%
+	}
+	95% {
+		top: -500%
+	}
+	100% {
+		top: 0
+	}
 }
 
 /*IDs*/
