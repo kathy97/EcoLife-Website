@@ -1,19 +1,18 @@
 /*Formatierung des Bodys/Körpers*/
 body{
-	background-image: url("moss.jpg");
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	background-color:#ddfcde;
 	}
 
 	
 /*Formatierung des Dropdown Menüs*/	
 .NavBar
 	{
-	background-color: #444;
+	background-color: #1111;
 	}
 	
+.menuBar{
+	background-color: #76d384;
+}
 .dropdown:hover .dropIt
 	{
 	display: block;
@@ -42,6 +41,19 @@ body{
 	{
 	background-color: #F1F1F1;	
 	}
+
+
+#Copyright {
+	text-align: center;
+}
+
+
+.atBottom {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+
 	
 li 
 	{
