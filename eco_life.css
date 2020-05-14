@@ -82,10 +82,12 @@ button{
 	height: 520px;
   padding-top: 19px;
 	width: 290px;
+	margin:auto;
 }
 #wrapper{
 	margin: 0;
 	padding:0;
+
 }
 #Gallery figure {
 	height:100%;
