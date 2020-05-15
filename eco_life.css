@@ -10,14 +10,17 @@ html, body{
 	 width: 548px;
 	 }
 
- article {
+ article,
+article:target ~ article.target {
 		 display : none;
 		 }
-		 
- article:target {
+
+article:target,
+article.target{
 				display: block;
 				}
 
+ 
 		
 /*Formatierung der Menu-Bar*/	
 .menuBar{
@@ -102,7 +105,7 @@ button{
 #gallerie figure {
 	height:100%;
 	animation-name: slide;
-	animation-duration: 18s;
+	animation-duration: 78s;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-in-out;
 	position: relative;
@@ -131,42 +134,115 @@ button{
 	0% {
 		top: 0%
 	}
-	12% {
+	3% {
 		top: 0%
 	}
-	16% {
+	6% {
 		top: -100%
 	}
-	28% {
+	9% {
 		top: -100%
 	}
-	32% {
+	12% {
 		top: -200%
 	}
-	44% {
+	15% {
 		top: -200%
+	}
+	18% {
+		top: -300%
+	}
+	21% {
+		top: -300%
+	}
+	24% {
+		top: -400%
+	}
+	27% {
+		top: -400%
+	}
+	30% {
+		top: -500%
+	}
+	33% {
+		top: -500%
+	}
+	36% {
+		top: -600%
+	}
+	39% {
+		top: -600%
+	}
+	42% {
+		top: -700%
+	}
+	45% {
+		top: -700%
 	}
 	48% {
-		top: -300%
+		top: -800%
+	}
+	51% {
+		top: -800%
+	}
+	54% {
+		top: -900%
+	}
+	57% {
+		top: -900%
 	}
 	60% {
-		top: -300%
+		top: -1000%
 	}
-	65% {
-		top: -400%
+	63% {
+		top: -1000%
+	}
+	66% {
+		top: -1100%
+	}
+	69% {
+		top: -1100%
+	}
+	72% {
+		top: -1200%
+	}
+	75% {
+		top: -1200%
 	}
 	78% {
-		top: -400%
+		top: -1300%
 	}
-	83% {
-		top: -500%
+	81% {
+		top: -1300%
 	}
-	95% {
-		top: -500%
+	84% {
+		top: -1400%
 	}
-	100% {
-		top: 0
+	87% {
+		top: -1400%
 	}
+	90% {
+		top: -1500%
+	}
+	92% {
+		top: -1500%
+	}
+	94% {
+		top: -1600%
+	}
+	96% {
+		top: -1600%
+	}
+	97% {
+		top: -1700%
+	}
+	98% {
+		top: -1700%
+	}
+	100%{
+		top:0
+	}
+	
 }
 
 /*IDs*/
