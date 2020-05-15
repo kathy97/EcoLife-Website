@@ -10,7 +10,11 @@ html, body{
 	 width: 548px;
 	 }
 
- article,
+/*
+die Article formatierungen machen, das das element mit der klasse target als erstes angezeigt wird
+Die darauffolgenden Ausgewählten article werden nicht mehr angezeigt, das heißt das permanent nur ein article displayed wird
+*/
+article,
 article:target ~ article.target {
 		 display : none;
 		 }
@@ -20,9 +24,15 @@ article.target{
 				display: block;
 				}
 
- 
-		
-/*Formatierung der Menu-Bar*/	
+/*der Knopf wird so formatiert das er ein passendes grün zum darüberliegenden Android-männchen hat*/
+button{
+	background-color: #78C259;
+	border-color: white;
+}
+
+	
+/*Formatierung der Menu-Bar
+legt die Farbe der Menu-Bar fest und auch die farbe beim mit der maus darüberfahren*/	
 .menuBar{
 	background-color: #a0f0ac;
 }
@@ -33,103 +43,24 @@ article.target{
 }
 
 
-/*CLASSES*/
-#atBottom {
-	position: absolute;
-	bottom: 0px;
-	width: 100%;
-	height: 1em;
-	text-align:center;
-}
-#Seite {
-    position: relative;
-    min-height: 100%;
-    width: 100%;
+/*CLASSES
 
+Content legt die Höhe und breite fest, für das Div mit dieser Klasse
 
-}
-#Inhalt {
-    padding-bottom: 3em;
-}
-
+androidContent legt die text ausrichtung fest - diese ist zentriert */
 .Content{
 	padding-left: 200px;
 	padding-right: 200px;
 }
+
 .androidContent{
 	text-align:center;
 }
 
 
-button{
-	background-color: #78C259;
-	border-color: white;
-}
 
-#Gallery{
-	text-align: center;
-	width: 248px;
-	height: 379px;
-	margin: 0 auto;
-	overflow: hidden;
-}
-#gallerie{
-	text-align: center;
-	width: 248px;
-	height: 496px;
-	margin: 0 auto;
-	overflow: hidden;
-}
-#container{
-	background-color: white;
-	height: 520px;
-  padding-top: 19px;
-	width: 290px;
-	margin:auto;
-}
-#wrapper{
-	margin: 0;
-	padding:0;
-
-}
-#Gallery figure {
-	height:100%;
-	animation-name: slide;
-	animation-duration: 18s;
-	animation-iteration-count: infinite;
-	animation-timing-function: ease-in-out;
-	position: relative;
-	margin: 0;
-	padding: 0;
-}
-#gallerie figure {
-	height:100%;
-	animation-name: slide;
-	animation-duration: 78s;
-	animation-iteration-count: infinite;
-	animation-timing-function: ease-in-out;
-	position: relative;
-	margin: 0;
-	padding: 0;
-}
-#Gallery img {
-	margin: 0;
-	padding: 0;
-}
-#gallerie img {
-	margin: 0;
-	padding: 0;
-}
-/*Animation */
-
-
-#Gallery:hover figure {
-	animation-play-state: paused;
-}
-#gallerie:hover figure {
-	animation-play-state: paused;
-}
-
+/*legt fest wie schnell und wann sich die bilder wechseln
+Je nach anzahl der Bilder verschieden*/
 @keyframes slide {
 	0% {
 		top: 0%
@@ -245,25 +176,158 @@ button{
 	
 }
 
+@keyframes slideer {
+	0% {
+		top: 0
+	}
+	12% {
+		top: 0
+	}
+	16% {
+		top: -100%
+	}
+	28% {
+		top: -100%
+	}
+	32% {
+		top: -200%
+	}
+	44% {
+		top: -200%
+	}
+	48% {
+		top: -300%
+	}
+	60% {
+		top: -300%
+	}
+	65% {
+		top: -400%
+	}
+	78% {
+		top: -400%
+	}
+	83% {
+		top: -500%
+	}
+	95% {
+		top: -500%
+	}
+	100% {
+		top: 0
+	}
+}
+	
 /*IDs*/
+/*legt den Inhalt mit der Copyright formatierung in die mitte*/
 #Copyright {
 	text-align: center;
 }
+/*bildet den weißen hintergrund beim Slider auf der Startseite*/
+#container{
+	background-color: white;
+	height: 520px;
+  padding-top: 19px;
+	width: 290px;
+	margin:auto;
+}
+/*umhüllt den container auf der startseite*/
+#wrapper{
+	margin: 0;
+	padding:0;
 
+}
+/*ist in der fußzeile die formatierung das diese auch immer am ende der seite bleibt*/
+#atBottom {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 1em;
+	text-align:center;
+}
+/*gibt die position und maße der seite an*/
+#Seite {
+    position: relative;
+    min-height: 100%;
+    width: 100%;
+
+
+}
+/*gibt an wieweit der inhalt vom boden entfernt ist*/
+#Inhalt {
+    padding-bottom: 3em;
+}
+
+/*Animation */
+/*legt größe der elemente der Gallerien fest und auch die ausrichtung*/
+#Gallery{
+	text-align: center;
+	width: 248px;
+	height: 379px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#gallerie{
+	text-align: center;
+	width: 248px;
+	height: 496px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+/*legt höhe und animationseigenschaften der figure elemente der gallerien fest*/
+#Gallery figure {
+	height:100%;
+	animation-name: slide;
+	animation-duration: 60s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+#gallerie figure {
+	height:100%;
+	animation-name: slideer;
+	animation-duration: 18s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+/*legt padding und margin der bildelemente der Gallerien fest*/
+#Gallery img {
+	margin: 0;
+	padding: 0;
+}
+#gallerie img {
+	margin: 0;
+	padding: 0;
+}
+/*legt fest was mit den Gallieren und deren elementen passiert, wennn mir der maus darübergefahren wird
+in diesem fall pausiert die animation dann*/
+#Gallery:hover figure {
+	animation-play-state: paused;
+}
+#gallerie:hover figure {
+	animation-play-state: paused;
+}
 
 
 /*FORMATIERUNG - LISTED | UNLISTED*/
+/*legt die eigenschaften wie den rahmen an der rechten seite und die art wie die listen elemtene angezeigt werden fest */
 li {
 	float: left;
 	border-right: 1px solid #bbb;
 	display: block;
 	}
-   
+/*legt fest das das letzte listenelement keine hintergrundfarbe mehr erhält und auch keinen rahmen rechts*/
 li:last-child {
 	border-right: none;
 	background-color: none;
 	}
-	
+/*legt fest was mit den  anchor elemente bei den listed elementen passiert, diese werden als block angezeigt, die schriftfarbe st schwarz
+und auch die textausrichtung*/
 li a {
 	display: block;
 	color: black;
@@ -271,7 +335,7 @@ li a {
 	padding: 8px 16px;
 	text-decoration: none;
 	}
-
+/*legt die igenschaften der unlisted elemente fest*/
 ul { 
 	list-style-type: none;
 	margin: 0;
@@ -281,7 +345,9 @@ ul {
    }
 
 
-/*FORMATIERUNG - TEXT | ÜBERSCHRIFTEN*/
+/*FORMATIERUNG - TEXT | ÜBERSCHRIFTEN
+
+setzt jeweils die schrift zentriert und die h1 überschriften auf textgröße 30px*/
 h1 {
 	text-align: center;
 	font-size: 30px;

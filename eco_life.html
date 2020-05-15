@@ -3,19 +3,20 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="author" content="Katharina Schury">
-	<meta name="description" content="">
+	<meta name="description" content="Gibt es eine Möglichkeit seinen Alltag umweltbewusster zu gestalten? Ja, und zwar die Umwelt-Applikation
+	Eco-Life!">
 	<meta name="keywords" content="Umwelt, Environment, Sustainability, Nachhaltigkeit">
 	
 	<!--CSS-Datei, welche eingebunden wird-->
 	<link rel="stylesheet" href="eco_life.css">
 
-	
+	<!--Titel und Favicon-->
 	<title>Eco-Life</title>
 	<link rel="shortcut icon" type="image/x-icon" href="icon.ico">
 
 </head>
 <body>
-	<!--Hier kommt Dropdown Menü hin-->
+	<!--Menu-Bar-->
 	<nav>
 		<ul>
 			<li class="menuBar"><a href="#Home">Startseite</a></li>
@@ -24,6 +25,7 @@
 			<li class="menuBar"><a href="#Website">Zur Website</a></li>
 		</ul>
 	</nav>
+	<!--In div-Container befinden sich die einzelnen Article welche im Menu aufgerufen werden können-->
 	<div id="Seite">
 		<div id="Inhalt">
 			<article id="AboutApp">
@@ -35,6 +37,7 @@
 					<br>Ziel ist es, anhand der Gewohnheiten, nach denen man lebt, seinen CO² Fußabdruck zu verringern.</p>
 				</div>
 				<h2>Welche Gewohnheiten gibt es?</h2>
+				<!--Ein Slider welcher die Fotos automatisch weiter wischt.-->
 				<div id="Gallery">
 					<figure>
 						<img src="sepWaste.jpeg" alt="Müll trennen" width="248px" height="379px">
@@ -98,14 +101,18 @@
 				<div class="Content">
 					<h2>Android</h2>
 					<div class ="androidContent">
+						<!--Bild eines Android-Männches-->
 						<img src="android.png" alt="Android-Symbol" width="100" height="110">
 						<br>
+						<!--Download button - offnet derzeit nur den Google Play Store auf der Startseite, da App noch nicht hochgeladen ist-->
 						<button type="submit" class="DownloadButton"  onclick=" window.open('https://play.google.com/store','_blank')">Download</button>
 					</div>
 				</div>
 			</article>
 		
 			<article id="Website">
+				<!--Zeigt aktuell derzeit nur das die Seite in Arbeit ist
+				Wird als Erweiterung irgendwann mal noch geändert-->
 				<h1>Eco-Life Website</h1>
 				<div class="Content">
 					<p>Diese Seite ist noch in Arbeit...</p>
@@ -113,7 +120,12 @@
 			</article>
 			
 			<article id="Home" class="target">
+				<!--Home hat die Klasse target und wird gleich als erstes - auch wenn nicht gewählt - angezeigt
+				Verschwindet wieder wenn anderer Article ausgewählt ist.-->
 				<h1>Eco-Life</h1>
+				<!--Beinhaltet einen Slider mit 6 Screenshots aus der App.
+				Da diese schwer erkennbar sind, aufgrund des mangelnden Kontrastet, beginden sich diese in Div-Container um weiß umrandet zu 
+				werden.-->
 				<div id="wrapper">
 					<div id="container">
 						<div id="gallerie">
@@ -140,6 +152,7 @@
 				</div>
 			</article>
 		
+			<!--Ist die Fußzeile. Beinhaltet Copyright hinweis und den Link zum impressum des It-Labs Villach-->
 			<div id="atBottom">
 				©️ 2020 - Eco-Life |
 				<a href="https://www.itlabs.at/impressum/">Impressum</a>
